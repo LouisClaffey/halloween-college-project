@@ -1,0 +1,659 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #bbcadd;
+}
+
+/* styles for header and footer */
+
+header {
+  position: relative;
+  border: 3px solid rgba(0, 0, 0, 0.2);
+  margin: 0;
+  padding: 0;
+  height: 20vh;
+  color: #fff8ed;
+  background-color: #ea967a;
+}
+
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+footer {
+  position: relative;
+  border: 3px solid rgba(0, 0, 0, 0.2);
+  background-color: #ea967a;
+  color: #fff8ed;
+  height: 10vh;
+  clear: both;
+}
+
+h5 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* styles for side-nav */
+
+nav {
+  font-size: 25px;
+  height: 70vh;
+  border-left: 3px solid rgba(0, 0, 0, 0.2);
+  float: left;
+  width: 15%;
+}
+
+hr {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.list1 {
+  padding-top: 20px;
+}
+
+li > a {
+  text-decoration: none;
+  display: block;
+  padding: 20px 20px 15px 40px;
+  color: #8e4e67;
+}
+
+.costume-nav {
+  height: 140vh;
+}
+
+/* styles for main-section, writing and gallery */
+section {
+  color: #2e4161;
+  height: 70vh;
+  border-left: 3px solid rgba(0, 0, 0, 0.2);
+  border-right: 3px solid rgba(0, 0, 0, 0.2);
+  float: right;
+  width: 85%;
+}
+
+.section-costume-ideas {
+  color: #2e4161;
+  border-left: 3px solid rgba(0, 0, 0, 0.2);
+  border-right: 3px solid rgba(0, 0, 0, 0.2);
+  height: 140vh;
+  float: right;
+  width: 85%;
+}
+
+.main-writing-container {
+  width: 65vw;
+  padding-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-writing-container > h2 {
+  font-size: 30px;
+}
+
+.main-writing-container > p {
+  font-size: 20px;
+}
+
+p > br {
+  display: block;
+  margin-top: 10px;
+  content: "";
+}
+
+.gallery-container {
+  margin: auto;
+  padding-top: 2%;
+  width: 55vw;
+  display: grid;
+  grid-column-gap: 2px;
+  grid-template-columns: 30% 40% 30%;
+}
+
+.container-1-img {
+  width: 100%;
+  height: 230px;
+}
+
+img {
+  object-fit: cover;
+}
+
+#under-image {
+  text-align: center;
+  padding-top: 20px;
+}
+
+/* styles for links under images */
+
+p > a {
+  color: #8e4e67;
+}
+
+p > a:hover {
+  color: #2e4161;
+}
+
+/* Events page image styling */
+
+.gallery-container-2 {
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  width: 75vw;
+  display: grid;
+  grid-column-gap: 2px;
+  grid-template-columns: 2fr 3fr 2fr 3fr;
+}
+
+.container-2-img {
+  height: 200px;
+  width: 100%;
+}
+
+.event-01 {
+  position: relative;
+}
+
+.overlay-01 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-radius: 2%;
+  width: 100%;
+  height: 98%;
+  opacity: 0;
+  background-color: #2e4161;
+  color: #fff;
+  transition: 0.7s ease;
+}
+
+#event-text-01 {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+}
+
+.event-02 {
+  position: relative;
+}
+
+.overlay-02 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-radius: 2%;
+  width: 100%;
+  height: 98%;
+  opacity: 0;
+  background-color: #2e4161;
+  color: #fff;
+  transition: 0.7s ease;
+}
+
+#event-text-02 {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+}
+
+.event-03 {
+  position: relative;
+}
+
+.overlay-03 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-radius: 2%;
+  width: 100%;
+  height: 98%;
+  background-color: #2e4161;
+  color: #fff;
+  opacity: 0;
+  transition: 0.7s ease;
+}
+
+#event-text-03 {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+}
+
+.event-04 {
+  position: relative;
+}
+
+.overlay-04 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-radius: 2%;
+  width: 100%;
+  height: 98%;
+  background-color: #2e4161;
+  color: #fff;
+  opacity: 0;
+  transition: 0.7s ease;
+}
+
+#event-text-04 {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+}
+
+.gallery-container-2 img {
+  border-radius: 2%;
+}
+
+#under-image-events {
+  text-align: center;
+  padding-top: 40px;
+}
+
+/* Costume Ideas Styling */
+/* https://www.w3schools.com/howto/howto_css_image_overlay.asp referenced for overlay affect */
+
+.gallery-background {
+  border: solid black 2px;
+}
+
+.gallery-container-3 {
+  margin-top: 5%;
+  margin-left: 14%;
+  margin-right: auto;
+  width: 60vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 2px;
+  grid-row-gap: 2px;
+}
+
+.container-3-img {
+  height: 350px;
+  width: 100%;
+}
+
+#idea-01 {
+  position: relative;
+}
+
+#idea-text01 {
+  position: absolute;
+  top: 25%;
+  left: 5%;
+}
+
+.overlay-ideas-01 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-radius: 2%;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: #bbcadd;
+  color: #2e4161;
+  transition: 0.7s ease;
+}
+
+#idea-02 {
+  position: relative;
+}
+
+#idea-text02 {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+}
+
+.overlay-ideas-02 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-radius: 2%;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: #bbcadd;
+  color: #2e4161;
+  transition: 0.7s ease;
+}
+
+#idea-03 {
+  position: relative;
+}
+
+#idea-text03 {
+  position: absolute;
+  top: 25%;
+  left: 6%;
+}
+
+.overlay-ideas-03 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-radius: 2%;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: #bbcadd;
+  color: #2e4161;
+  transition: 0.7s ease;
+}
+
+#idea-04 {
+  position: relative;
+}
+
+#idea-text04 {
+  position: absolute;
+  top: 25%;
+  left: 4%;
+}
+
+.overlay-ideas-04 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-radius: 2%;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: #bbcadd;
+  color: #2e4161;
+  transition: 0.7s ease;
+}
+
+#idea-05 {
+  position: relative;
+}
+
+#idea-text05 {
+  position: absolute;
+  top: 25%;
+  left: 5%;
+}
+
+.overlay-ideas-05 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-radius: 2%;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: #bbcadd;
+  color: #2e4161;
+  transition: 0.7s ease;
+}
+
+#idea-06 {
+  position: relative;
+}
+
+#idea-text06 {
+  position: absolute;
+  top: 25%;
+  left: 5%;
+}
+
+.overlay-ideas-06 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-radius: 2%;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: #bbcadd;
+  color: #2e4161;
+  transition: 0.7s ease;
+}
+
+#idea-07 {
+  position: relative;
+}
+
+#idea-text07 {
+  position: absolute;
+  top: 25%;
+  left: 5%;
+}
+
+.overlay-ideas-07 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-radius: 2%;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: #bbcadd;
+  color: #2e4161;
+  transition: 0.7s ease;
+}
+
+#idea-08 {
+  position: relative;
+}
+
+#idea-text08 {
+  position: absolute;
+  top: 25%;
+  left: 7%;
+}
+
+.overlay-ideas-08 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-radius: 2%;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: #bbcadd;
+  color: #2e4161;
+  transition: 0.7s ease;
+}
+
+.gallery-container-3 img {
+  border-radius: 2%;
+}
+
+/* Contact from styles */
+/* https://www.w3schools.com/howto/howto_css_image_overlay.asp referenced for overlay affect */
+
+textarea {
+  resize: none;
+  padding: 10px;
+  border-style: hidden;
+  border-radius: 5px;
+}
+
+label {
+  line-height: 2;
+}
+
+.contact-section {
+  position: relative;
+  height: 120vh;
+}
+
+.contact-us-nav {
+  height: 120vh;
+}
+
+.form-img {
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+.form1 {
+  display: block;
+  width: 100%;
+  margin-top: 5%;
+  position: absolute;
+  border-radius: 25%;
+}
+
+.table1 {
+  text-align: center;
+}
+
+/* https://www.w3schools.com/css/css3_transitions.asp referenced for help with transitions */
+
+button {
+  text-align: center;
+  margin-top: 10px;
+  width: 60px;
+  height: 30px;
+  background-color: #ea967a;
+  color: #ffffff;
+  border-radius: 5px;
+  border: none;
+  transition: 0.7s ease;
+}
+
+.table1 input[type="text"] {
+  border-style: hidden;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.table1 input[type="checkbox"] {
+  display: inline;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+/* hover state events */
+
+.overlay-01:hover {
+  opacity: 0.9;
+}
+
+.overlay-02:hover {
+  opacity: 0.9;
+}
+
+.overlay-03:hover {
+  opacity: 0.9;
+}
+
+.overlay-04:hover {
+  opacity: 0.9;
+}
+
+/* hover state costumes */
+
+.overlay-ideas-01:hover {
+  opacity: 0.9;
+}
+
+.overlay-ideas-02:hover {
+  opacity: 0.9;
+}
+
+.overlay-ideas-03:hover {
+  opacity: 0.9;
+}
+
+.overlay-ideas-04:hover {
+  opacity: 0.9;
+}
+
+.overlay-ideas-05:hover {
+  opacity: 0.9;
+}
+
+.overlay-ideas-06:hover {
+  opacity: 0.9;
+}
+
+.overlay-ideas-07:hover {
+  opacity: 0.9;
+}
+
+.overlay-ideas-08:hover {
+  opacity: 0.9;
+}
+
+/* hover state contact form */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes referenced for pseudo classes */
+
+input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+.table-1-items:hover {
+  box-shadow: 1px 1px 1px grey;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+/* pseudo classes */
+input:focus::placeholder {
+  color: transparent;
+}
+
+textarea:focus::placeholder {
+  color: transparent;
+}
+
+a:hover {
+  color: #2e4161;
+}
